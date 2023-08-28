@@ -1,20 +1,24 @@
-# Colors
+#colors
+
 RED = \033[0;31m
 GREEN = \033[0;32m
 NC = \033[0m
 YELLOW = \033[0;33m
 MAGENTA = \033[0;35m
 
-# Program variables
+#program variables
+
 PROG = binary_exe
 SRC = $(wildcard *.c)
-OBJ = $(filter-out, $(SRC:.c=.o))
+OBJ = $(SRC:.c=.o)
 
-# Compiler variables
+#compiler variables
+
 CC = gcc
-CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89 -g
+CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89
 
-# Rules
+#rules
+
 build: $(PROG)
 
 $(PROG): $(OBJ)
@@ -23,12 +27,11 @@ $(PROG): $(OBJ)
 	@echo -e "$(GREEN) $(PROG) compiled$(NC) \n"
 
 %.o: %.c
-	@if [ -s $< ]; then \
-		echo -e "$(YELLOW)Compiling $(MAGENTA)$<$(NC)"; \
-		$(CC) $(CFLAGS) -c -o $@ $<; \
-	fi
+	@$(CC) $(CFLAGS) -c -o  $@ $^
 
 run: build
+	@echo $(SRC)
+	@echo $(OBJ)
 	@./$(PROG)
 
 clean:
