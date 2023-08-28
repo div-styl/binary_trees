@@ -8,7 +8,7 @@ MAGENTA = \033[0;35m
 
 #program variables
 
-PROG = binary_exe
+PROG = main
 SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 
