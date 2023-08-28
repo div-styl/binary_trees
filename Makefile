@@ -32,7 +32,7 @@ $(PROG): $(OBJ)
 run: build
 	@./$(PROG)
 
-clean:
+clean: run
 	@echo -e "$(RED)Cleaning...$(NC)"
 	@rm -f *.o $(PROG) *~ $(OBJ)
 	@echo -e "$(GREEN)Cleaned$(NC) \n"
