@@ -15,7 +15,7 @@ OBJ = $(SRC:.c=.o)
 #compiler variables
 
 CC = gcc
-CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89
+CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89  -g 
 
 #rules
 
@@ -30,8 +30,6 @@ $(PROG): $(OBJ)
 	@$(CC) $(CFLAGS) -c -o  $@ $^
 
 run: build
-	@echo $(SRC)
-	@echo $(OBJ)
 	@./$(PROG)
 
 clean:
