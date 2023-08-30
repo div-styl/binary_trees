@@ -15,7 +15,7 @@ OBJ = $(SRC:.c=.o)
 #compiler variables
 
 CC = gcc
-CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89  -g 
+CFLAGS = -Wall -Wextra -Werror -pedantic -std=gnu89 
 
 #rules
 
