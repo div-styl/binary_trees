@@ -36,5 +36,9 @@ clean: run
 	@echo -e "$(RED)Cleaning...$(NC)"
 	@rm -f *.o $(PROG) *~ $(OBJ)
 	@echo -e "$(GREEN)Cleaned$(NC) \n"
+clear:
+	@echo -e "$(RED)Cleaning...$(NC)"
+	@rm -f *.o $(PROG) *~ $(OBJ)
+	@echo -e "$(GREEN)Cleaned$(NC) \n"
 
 .PHONY: build run clean
