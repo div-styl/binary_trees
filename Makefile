@@ -8,7 +8,7 @@ MAGENTA = \033[0;35m
 
 #program variables
 
-PROG = runme
+PROG = rum_me
 SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 
