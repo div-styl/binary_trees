@@ -42,8 +42,8 @@
 | 16. Is perfect | [16-binary_tree_is_perfect.c](./16-binary_tree_is_perfect.c) |
 | 17. Sibling | [17-binary_tree_sibling.c](./17-binary_tree_sibling.c) |
 | 18. Uncle | [18-binary_tree_uncle.c](./18-binary_tree_uncle.c) |
-| 19. Lowest common ancestor | [SOON](./) |
-| 20. Level-order traversal | [SOON](./) |
+| 19. Lowest common ancestor | [100-binary_trees_ancestor.c](./100-binary_trees_ancestor.c) |
+| 20. Level-order traversal | [101-binary_tree_levelorder.c](./101-binary_tree_levelorder.c) |
 | 21. Is complete | [SOON](./) |
 | 22. Rotate left | [SOON](./) |
 | 23. Rotate right | [SOON](./) |
